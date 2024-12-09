@@ -1,0 +1,37 @@
+Programmer's perspective: wmfishtime
+------------------------------------
+
+This is a pretty clean implementation of a sprite based graphics engine for
+dockapps, or any other flat surface, for that matter.  Current version allows
+drawing colormap-based sprites directly to backbuffer or alpha-blended on top
+of backbuffer.  There is some limited support to drawing colormap based
+text strings, with some character set limitations. There is a routine for
+drawing anti-aliased colored lines, of variable width.
+
+There are a couple things implemented inside fishmon.c that are not enabled,
+one of them is wobbling weed on the bottom part of the screen, and another is
+a thermometer "gauge", which I couldn't find any use for in this version.
+Originally this project started as a hack-in-progress of the graphics engine,
+so turning it into a clock dockapp wasn't really planned.
+
+All the code related to calculating clock hand positions came directly from
+wmtime-1.02beta - I am terrible at calculating this kind of math, and really
+have no idea how to do it. :)
+
+Antialiased line algorithm came from some random java program, and uses
+bresenham line drawing algorithm with a little anti-aliasing addon.  This
+results in very sexy looking lines, perfectly blended with the underlying
+background - much better than the method used by wmtime, which made their
+"antialiased" clock hands look kind of jaggy.
+
+The code is pretty well optimized, it tries not to do anything more than it
+needs to be done, caching stuff that's hard to calculate and only recalculating
+when necessary.  Due to the dynamic nature of physical simulation involved,
+screen is updated at approximately 33 frames per second.
+
+gimp/ directory contains the original sprite image, which can be modified and
+saved as indexed .h file from gimp.  However before you go modifying the sprite
+image make sure and understand how it works :)  There are a couple of unused
+sprite indexes, and more can be added if necessary...
+
+ - timecop

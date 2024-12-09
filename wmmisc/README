@@ -1,0 +1,26 @@
+  This is a simple dockapp written to replace some of the features that gkrellm
+contains. It was written due to no other dockapp existing that has these features
+and gkrellm uses too much memory for what it does.
+
+What this dockapp does:
+     1. Shows count of currently logged in users.
+     2. Shows count of currently running processes.
+     3. Shows count of currently (active) running processes.
+     4. Shows uptime (HH:MM).
+     5. Shows uptime (days).
+     6. Shows uptime (weeks).
+     7. Shows system load (5 min).
+
+This dockapp was written for GNU/Linux and has not been tested, by me, on other platforms.
+It may work on FreeBSD with /proc file system support, but I honestly have no idea.
+
+This dockapp is a good base if you plan on writing your own. I have provided simple functions
+for drawing text and numbers on the canvas. There are also functions in place for drawing
+bars, but it is currently unused and may contain bugs. However, I currently know of no bugs.
+If you find any, let me know (via email).
+
+Enjoy.
+
+- Jesse S. <luxorfalls@sbcglobal.net>
+
+Now maintained by the Window Maker Team <wmaker-dev@googlegroups.com>

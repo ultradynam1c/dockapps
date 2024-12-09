@@ -1,0 +1,14 @@
+This package was debianized by Marcel May <marcel.may@web.de> on
+Thu, 19 Apr 2001 21:00:13 +0200.
+
+It was downloaded from http://www.ne.jp/asahi/linux/timecop/software/wmfishtime-1.2.tar.gz
+
+Upstream Author(s): timecop <timecop@japan.co.jp>, martijn pieterse <pieterse@xs4all.nl>,
+ antoine nulle <warp@xs4all.nl>, Marcel May <marcel.may@web.de>, tarzeau <tarzeau@space.ch>,
+ Jason Thomas <jason@debian.org>
+
+Copyright:
+ You are free to distribute this software under the terms of
+ the GNU General Public License (GPL V2).
+ On Debian systems, the complete text of the GNU General Public 
+ License can be found in /usr/share/common-licenses/GPL file.

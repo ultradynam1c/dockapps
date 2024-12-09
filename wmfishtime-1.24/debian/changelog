@@ -1,0 +1,9 @@
+wmfishtime (1.23-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Marcel May <marcel.may@web.de>  Thu, 19 Apr 2001 21:00:13 +0200
+
+Local variables:
+mode: debian-changelog
+End:

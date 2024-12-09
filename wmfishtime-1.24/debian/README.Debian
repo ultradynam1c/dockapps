@@ -1,0 +1,15 @@
+wmfishtime for Debian
+---------------------
+From the original INSTALL:
+
+Version 1.2 includes automatic mail-spool check.  Periodically, wmfishtime
+will check for new contents in the file pointed to by $MAIL variable.  If
+you for some reason don't need this functionality, edit Makefile and uncomment
+the appropriate EXTRA line from the top.
+
+If you get a gray box and nothing else after you start this dockapp, edit
+Makefile and read the top few lines. So far this problem has been reported
+with the E window manager. Please bug E developers to fix dockapp handling
+in their window manager.
+
+ -- Marcel May <marcel.may@web.de>, Thu, 19 Apr 2001 21:00:13 +0200

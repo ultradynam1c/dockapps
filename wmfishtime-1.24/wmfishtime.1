@@ -1,0 +1,88 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH WMFISHTIME SECTION "April 19, 2001"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+wmfishtime \- dockable clock app for WMaker, BlackBox, E, SawFish etc. window manager
+.SH SYNOPSIS
+.B wmfishtime
+.\" .RI [ options ] " none" ...
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B wmfishtime
+command.
+.PP
+This manual page was written for the Debian GNU/Linux distribution
+because the original program does not have a manual page. It
+originated from the original source README file (see authors).
+.PP
+.\" TeX users may be more comfortable with the \fB<whatever>\fP and
+.\" \fI<whatever>\fP escape sequences to invode bold face and italics, 
+.\" respectively.
+\fBwmfishtime\fP is a dockable clock application for WMaker, BlackBox, E, SawFish etc.
+window manager.
+
+The features include gradient backdrop, anti-aliased hour|minute|second hands,
+alpha-blended bubbles, a real-time sprite engine, precision accuracy
+and indicates unread mail (in the form of swaying weed blocking
+the day/month numbers).
+
+Well, this is just your standard time dockapp. Top part has the clock face,
+bottom part has day of the week, followed by day, followed by month. Yellow
+hand counts seconds, green hand counts minutes, red hand counts hours. Few
+seconds after startup there are at least 32 bubbles floating up behind the
+clock face.  There are 4 fishes randomly swimming back and forth. If you move
+your mouse inside the dockapp window, the fish will get scared and run away.
+If you enabled mail checking (disabled for default), then whenever you get new mail
+in the file pointed to by the $MAIL variable, it will display green weed
+partially blocking the day/month counter, to remind you to read your mail.
+If $MAIL is not set, nothing happens.
+
+.SH OPTIONS
+.TP
+.B \-h, ,\-help, \-\-help
+Show summary of options.
+.TP
+.B \-v, ,\-version, \-\-version
+Show version of program.
+.TP
+.B \-c, \-check\-mail, \-\-check\-mail
+Enables mail checking.
+.TP
+.B \-b, \-broken, \-\-broken
+Activate fix for broken window managers.
+.SH SEE ALSO
+http://www.ne.jp/asahi/linux/timecop/
+
+http://www.ne.jp/asahi/linux/timecop/software/wmfishtime-1.23.tar.gz (original source)
+
+http://freshmeat.net/projects/wmfishtime/
+
+.BR wmaker (1)
+
+.br
+.SH AUTHOR
+
+wmfishmon was written by timecop <timecop@japan.co.jp> with contribution from
+martijn pieterse <pieterse@xs4all.nl>,  antoine nulle <warp@xs4all.nl>,
+Marcel May <marcel.may@web.de>, tarzeau <tarzeau@space.ch> and Jason Thomas <jason@debian.org>
+
+
+This manual page was written by Marcel May <marcel.may@web.de>,
+for the Debian GNU/Linux system (but may be used by others).
+It originated from the original source README file by
+timecop <timecop@japan.co.jp>.

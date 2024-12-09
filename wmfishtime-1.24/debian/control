@@ -1,0 +1,28 @@
+Source: wmfishtime
+Section: x11
+Priority: optional
+Maintainer: Marcel May <marcel.may@web.de>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: wmfishtime
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Dockable clock app for WMaker, BlackBox, E, SawFish etc. .
+ Welcome to WMFishTime, winner of the "Best Waste Of CPU Power" award!
+ This is a dockable clock application for WMaker, BlackBox, E, SawFish etc. .
+ .
+ The features include gradient backdrop, anti-aliased hour, minute, second hands
+ alpha-blended bubbles, real-time sprite engine, precision accuracy,
+ and shows if you have unread mail (in the form of swaying weed blocking the day/month numbers).
+ .
+ Well, this is just your standard time dockapp. Top part has the clock face,
+ bottom part has day of the week, followed by day, followed by month. Yellow
+ hand counts seconds, green hand counts minutes, red hand counts hours. Few
+ seconds after startup there are at least 32 bubbles floating up behind the
+ clock face.  There are 4 fishes randomly swimming back and forth. If you move
+ your mouse inside the dockapp window, the fish will get scared and run away.
+ If you compiled in mail checking (default), then whenever you get new mail
+ in the file pointed to by the $MAIL variable, it will display green weed
+ partially blocking the day/month counter, to remind you to read your mail.
+ If $MAIL is not set, nothing happens.

@@ -1,0 +1,11 @@
+Only the LINUX makefile has been updated to work with GDK libraries.
+If you want to use wmcube on another supported platform (solaris/*bsd, etc),
+you will need to modify the appropriate Makefile, pointing CFLAGS to the
+correct location for GDK/GTK headers and replacing X11 libraries with
+-lgdk, and possibly adding -L/path/to/gdk/libs.
+
+If you run a "Linux distribution" chances are gdk/gtk is installed in
+/usr/include and /usr/lib, so you might need to modify Makefile and
+adjust -I and -L lines.
+
+timecop@japan.co.jp

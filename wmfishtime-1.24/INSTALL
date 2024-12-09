@@ -1,0 +1,15 @@
+1. make
+2. make install
+4. wmfishtime &
+
+Version 1.2 includes automatic mail-spool check. Periodically, wmfishtime
+will check for new contents in the file pointed to by $MAIL variable. This
+is disabled by default, but can be enabled using "-c" or "--check-mail"
+options.
+
+If you get a gray box and nothing else after you start this dockapp, you
+have a retarded broken window manager such as E, recent versions of the KDE
+window manager, etc. Remember that if you get this your system totally sucks
+ass, and you have to use "-b" or "--broken" options to fix this. If you feel
+offended by this, make sure and let developers of E and KWM know that they
+suck.

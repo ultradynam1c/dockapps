@@ -1,0 +1,16 @@
+timecop          <timecop@japan.co.jp>
+all the code, except calculating clock hand position
+
+martijn pieterse <pieterse@xs4all.nl>
+antoine nulle    <warp@xs4all.nl>
+clock hand position code (taken from wmtime)
+
+Marcel           <marcel.may@web.de>
+Contributed mail-check code to check for unread mail,
+man page and debian package
+
+tarzeau          <tarzeau@space.ch>
+all the graphics in ./gimp/sprites.xcf
+
+Jason Thomas <jason@debian.org>
+added parameter for broken window manager handling

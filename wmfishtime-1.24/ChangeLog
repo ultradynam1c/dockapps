@@ -1,0 +1,4 @@
+1.24 2004/05/13
+     Fixed a GDK event memory leak thanks to Alan Swanson <swanson@ukfsn.org>
+
+1.23 Last public release sometime in May 2001

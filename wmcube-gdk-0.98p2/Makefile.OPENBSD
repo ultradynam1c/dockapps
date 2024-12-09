@@ -1,0 +1,26 @@
+LDFLAGS += `gtk-config --libs`
+CFLAGS += -DOPENBSD `gtk-config --cflags`
+
+OBJS =	wmcube.o
+
+.c.o:
+	$(CC) $(CFLAGS) $(INCDIR) -c $< -o $*.o
+
+wmcube: $(OBJS)
+	$(CC) -o wmcube $(OBJS) $(LDFLAGS)
+
+
+all:: wmcube
+
+clean::
+	for i in $(OBJS) ; do \
+		rm -f $$i ; \
+	done
+	rm -f wmcube
+	rm -f *~
+
+install:: wmcube
+	cp -f wmcube /usr/local/bin/
+	chmod 755 /usr/local/bin/wmcube
+	chown root:root /usr/local/bin/wmcube
+	@echo "wmCube installation finished..."
